@@ -26,7 +26,7 @@
                   I develop machine learning and robotics methods to accelerate scientific exploration within biology and materials discovery. I'm an incoming Member of Technical Staff at <a href="https://www.evolutionaryscale.ai/" target="_blank">EvolutionaryScale</a> working on research with the team that created <a href="https://github.com/facebookresearch/esm" target="_blank">ESM</a>.
                 </p>
                 <p>
-                  Currently, I'm working at the Arc Institute with <a href="https://cs.stanford.edu/people/yhr/" target="_blank">Yusuf Roohani</a> and <a href="https://arcinstitute.org/labs/goodarzilab" target="_blank">Hani Goodarzi</a> on the Virtual Cell Initiative. Previous to this, I worked at Chan Zuckerberg Biohub, modeling cell dynamics using contrastive learning on time-lapse images.
+                  Currently, I'm working at the Arc Institute with <a href="https://cs.stanford.edu/people/yhr/" target="_blank">Yusuf Roohani</a> and <a href="https://arcinstitute.org/labs/goodarzilab" target="_blank">Hani Goodarzi</a> on the Virtual Cell Initiative. Previous to this, I worked at <a href="https://www.czbiohub.org/" target="_blank">Chan Zuckerberg Biohub</a> with <a href="https://www.czbiohub.org/sf/people/staff/shalin-mehta-phd/" target="_blank"> Shalin Mehta</a>, modeling cell dynamics using contrastive learning on time-lapse images.
                 </p>
                 <p>
                   In the past, I worked at <a href="https://www.tesla.com/" target="_blank">Tesla</a> as a lead engineer on physics models and ML methods for battery materials discovery within formation. I also founded Voltx, an ML and physics platform to speed up battery development. We raised a pre-seed round of over $1 million and booked revenue through executing on partnerships with large manufacturers.
@@ -54,7 +54,7 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
+                  I'm broadly interested in AI, biology, and robotics research. Currently, I'm excited about single-cell perturbation models, multi-modal protein language models, and the interpretability of these models.
                 </p>
               </td>
             </tr>
@@ -63,57 +63,46 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='simvs_image'><video  width=100% muted autoplay loop>
-          <source src="images/simvs.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/simvs.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function simvs_start() {
-            document.getElementById('simvs_image').style.opacity = "1";
-          }
-
-          function simvs_stop() {
-            document.getElementById('simvs_image').style.opacity = "0";
-          }
-          simvs_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://nerf-casting.github.io/">
-          <span class="papertitle">SimVS: Simulating World Inconsistencies for Robust View Synthesis</span>
-        </a>
-        <br>
-				
-
-        <a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
-        <a href="https://scholar.google.com/citations?user=-KSDNZQAAAAJ&hl=en">Roni Paiss</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
-        <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
-        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-        <a  href="https://poolio.github.io/">Ben Poole</a>,
-				<strong>Jonathan T. Barron</strong>, 
-        <a href="https://holynski.org/">Aleksander Holynski</a>,
-        <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
-        <br>
-        <em>arXiv</em>, 2024
-        <br>
-        <a href="https://alextrevithick.github.io/simvs/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2412.07696">arXiv</a>
-        <p></p>
-        <p>
-        Simulating the world with video models lets you make inconsistent captures consistent.
-        </p>
-      </td>
-    </tr>
+            <tr onmouseout="simvs_stop()" onmouseover="simvs_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='simvs_image'>
+                    <img src='images/dynaclr.png' width=100%>
+                  </div>
+                </div>
+                <script type="text/javascript">
+                  function simvs_start() {
+                    document.getElementById('simvs_image').style.opacity = "1";
+                  }
+            
+                  function simvs_stop() {
+                    document.getElementById('simvs_image').style.opacity = "0";
+                  }
+                  simvs_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2410.11281">
+                  <span class="papertitle">Contrastive learning of cell state dynamics in response to perturbations</span>
+                </a>
+                <br>
+                <strong>Soorya Pradeep</strong>, <strong>**Alishba Imran**</strong>, Ziwen Liu, Taylla Milena Theodoro, Eduardo Hirata-Miyasaki, Ivan Ivanov, Madhura Bhave, Sudip Khadka, Hunter Woosley, Carolina Arias, Shalin B Mehta
+                <br>
+                <em>arXiv preprint</em>, 2024/10/15
+                <br>
+                <strong>Under review at <em>Cell Patterns</em></strong>
+                <br>
+                <a href="https://github.com/mehta-lab/viscy">Codebase</a>
+                /
+                <a href="https://github.com/czbiohub-sf/napari-iohub">Visualization Tool</a>
+                <p></p>
+                <p>
+                  We introduce DynaCLR, a self-supervised framework that uses contrastive learning to model dynamic cell states in response to perturbations from time-lapse imaging data. This method enhances cell state classification, clustering, and embedding across various perturbations such as infections, gene knockouts, and drug treatments.
+                </p>
+              </td>
+            </tr>
+            
+            
 
 
 
